@@ -9,7 +9,7 @@ import {
   useIntersectionObserver,
 } from "../../assets/assets";
 import { useContext } from "react";
-import { ThemeContext } from "../../context/ThemeContext";
+import { ThemeContext } from "../../context/themeContext";
 import { useRef } from "react";
 
 const Project = () => {

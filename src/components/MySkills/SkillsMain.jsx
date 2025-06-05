@@ -12,7 +12,7 @@ import { IoLogoPython } from "react-icons/io5";
 
 import "./SkillsMain.css";
 import { fadeIn, useIntersectionObserver } from "../../assets/assets";
-import { ThemeContext } from "../../context/ThemeContext";
+import { ThemeContext } from "../../context/themeContext";
 
 import React, { useContext } from "react";
 import SkillList from "./SkillsList/SkillList";

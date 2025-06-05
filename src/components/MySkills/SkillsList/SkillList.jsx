@@ -2,7 +2,7 @@ import "./SkillList.css";
 import { fadeIn } from "../../../assets/assets";
 
 import React, { useContext } from "react";
-import { ThemeContext } from "../../../context/ThemeContext";
+import { ThemeContext } from "../../../context/themeContext";
 
 const SkillList = ({ text, imgSvg }) => {
   const { isDark } = useContext(ThemeContext);
