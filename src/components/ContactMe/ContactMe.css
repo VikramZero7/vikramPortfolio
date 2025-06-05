@@ -1,0 +1,141 @@
+.contact-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50vh;
+    background-color: rgb(85, 83, 83);
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    gap: 50px;
+}
+
+.contact-left-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-family: "roboto";
+    color: #ffffff;
+    width: 300px;
+    max-width: 1200px;
+}
+
+.contact-left-container h1 {
+   color: rgb(255, 174, 0);
+   font-size:26px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-input{
+    height: 45px;
+    width: 100%;
+    background-color:rgb(177, 174, 174);
+    border: 0px solid;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    outline: none;
+}
+
+.contact-text {
+    background-color:rgb(177, 174, 174);
+    border: 0px solid;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    outline: none;
+    font-family: "roboto";
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.contact-button {
+    height: 35px;
+    color: #ffffff;
+    background-color: rgb(65, 67, 212);
+    border-radius: 5px;
+}
+
+.contact-button:hover{
+    background-color:rgb(36, 39, 206) ;
+}
+
+.contact-right-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-email{
+    width: 250px;
+    height: 250px;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    gap: 15px;
+}
+
+.contact-icon-container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact-icon {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.social-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    gap: 15px;
+}
+
+
+@media screen and (min-width:768px) {
+  .contact-main-container{
+    flex-direction: row;
+  }
+  
+  .image-email {
+    width: 200px;
+    height: 200px;
+  }
+
+  .contact-left-container h1 {
+    font-size:28px;
+}
+
+.image-email{
+    width: 300px;
+    height: 300px;
+}
+
+}
+@media screen and (min-width:992px) {
+    .contact-right-container h1 {
+       font-size:30px;
+     }
+}
+
+@media screen and (min-width:1200px) {
+    .contact-right-container h1 {
+         font-size:34px;
+     }
+     .contact-left-container{
+        width: 100%;
+     }
+}

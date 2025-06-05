@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+body {
+ 
+  font-family: -apple-system, BlinkMacSystemFont,"Inter", 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+
+[data-aos="fade-left"] {
+  transform: translateX(10px); /* Reduce movement */
+  max-width: 100%;
+}
+
+.main-container{
+  min-height: 100vh;
+}
+
+.app{
+  width: 90%;
+  margin: auto;
+  
+}
+
+img{
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+}
+
+
+button {
+  background-color: transparent;
+  border: 0px solid;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.dark {
+  background: url("https://res.cloudinary.com/dpykift6z/image/upload/v1741442248/ognh5jny2060xyft5cfy.jpg");
+  background-size: cover;
+}
+
+.light {
+  background-color: #fff;
+}
+
+
+@keyframes wipe-in-left {
+  from {
+    clip-path: inset(0 0 0 100%);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:wipe:left"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
+}
+
+
+@keyframes wipe-in-right {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:wipe:right"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+}

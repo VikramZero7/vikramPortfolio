@@ -1,0 +1,46 @@
+.skill-container{
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    
+     height: 150px;
+     width: 150px;
+     padding: 10px 5px;
+     border-radius: 10%;
+     gap: 10px;
+}
+
+.skill-cont-light{
+    background-color: #9a7bd8;
+}
+
+.skill-cont-dark{
+    background-color: #ff6900;
+}
+
+
+.icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px; 
+    width: 80px; 
+    border-radius: 50%;
+    font-size: 32px;
+    color: #9a7bd8;
+    background-color: aliceblue;
+}
+
+.skill-container p{
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.icon-con-light { 
+  color: #9a7bd8;
+}
+
+.icon-con-dark {
+    color: #ff6900;
+}

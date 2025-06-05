@@ -1,0 +1,169 @@
+.about-main-container{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center; 
+ min-height: 40vw; 
+ gap: 1vw;
+ margin: 20px auto;
+ padding: 30px 0px;
+ 
+}
+
+.about-profile-sm{
+    display: block;
+    border-radius: 50%;
+    margin: 20px 0px;
+    padding: 10px;
+}
+
+.profile-about{
+    height: 200px;
+    width: 200px;
+}
+
+
+.about-profile-lg{
+  display: none;
+  border-radius: 50%;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.about-heading{
+    font-size: 26px;
+}
+
+.about-job{
+    font-size: 24px;
+}
+
+.aboutme-para{
+    font-family: "roboto";
+    text-align: center;
+    
+}
+
+.about-content hr{
+    width: 100%;
+    margin: 0px;
+}
+
+
+.dark-about-pro {
+    background-color: #ff6900;
+    
+}
+
+.light-about-pro {
+    background-color: #533a86;
+    
+}
+
+.dark-about{
+    color: #ff6900;
+}
+
+.light-about{
+    color: #533a86;
+}
+
+.dark-font {
+    color: #ffffff;
+}
+
+.light-font {
+    color: #474646;
+}
+
+.light-para{
+    color: #837d7d;
+}
+
+.dark-para{
+    color: #fff;
+}
+
+.about-button {
+    width: 120px;
+    height: 35px;
+    border-radius: 30px;
+    color: #ffffff;
+}
+
+.about-button-dark{
+    background-color: #ff6900;
+}
+
+.about-button-light {
+    background-color: #533a86;
+}
+
+
+
+@media screen and (min-width:768px) {
+    .about-main-container{
+        flex-direction: row;
+    }
+
+    .about-profile-sm {
+        display: none;
+    }
+
+    .about-profile-lg {
+        display: block;
+    }
+
+    .about-heading{
+        font-size: 28px;
+    }
+    .about-content{
+        align-items: flex-start;
+        max-width: 60%;
+    }
+
+    .about-job{
+        font-size: 26px;
+    }
+
+    .aboutme-para{
+        text-align: start;
+    }
+
+    .aboutme-para hr{
+        margin: 10px;
+    }
+    
+    
+}
+
+@media screen and (min-width:992px) {
+    .about-heading{
+        font-size: 30px;
+    }
+
+    .about-job{
+        font-size: 28px;
+    }
+    
+    
+}
+
+@media screen and (min-width:1200px) {
+    .about-heading{
+        font-size: 34px;
+    }
+
+    .about-job{
+        font-size: 30px;
+    }
+    
+    
+}

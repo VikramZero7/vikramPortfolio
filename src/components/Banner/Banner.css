@@ -1,0 +1,252 @@
+.banner-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 40vw;
+  border-radius: 10px;
+  padding: 30px;
+  gap: 10px;
+  margin: 30px 0px;
+  font-family: "Inter";
+}
+
+
+.banner-light{
+  background: url('https://res.cloudinary.com/dpykift6z/image/upload/v1741761319/t2xhqblwblzd7gvm4hfz.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-dark{
+  background:transparent;
+}
+
+.banner-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2vw;
+}
+
+.banner-container h3 {
+  color: #ffffff;
+}
+
+.name{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.job-name {
+  font-size: 18px;
+}
+
+.job-name-light{
+  color: #03fd63;
+  
+}
+
+.job-name-dark{
+  color: #ff6900;
+}
+
+.banner-content h2 {
+  color: #ffffff;
+}
+
+.banner-content p {
+  color: #ddd3f1;
+  text-align: center;
+}
+
+.banner-button-container{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 15px;
+}
+
+.banner-button {
+  width: 100px;
+  height: 35px;
+  border-radius: 30px;
+}
+
+.contact {
+  color: #ffffff;
+}
+
+
+.banner-button-light {
+  background-color: #03fd63;
+  
+}
+
+.banner-button-dark {
+  background-color: #ff6900;
+}
+
+.contact-button-light{
+  border: 1px solid #03fd63;
+}
+
+.contact-button-dark {
+  border: 1px solid #ff6900;
+}
+
+.contact-light {
+  color: #03fd63;
+}
+
+.contact-dark {
+  color: #ff6900;
+}
+
+
+.profile-container-sm{
+  display: block;
+  border-radius: 50%;
+  border: 10px solid;
+  animation: wipe-in-left 2.5s,float 3s ease-in-out infinite;
+}
+
+.profile-container-lg{
+  display: none;
+}
+
+.profile-container-light{
+  border: 10px solid #03fd63;
+}
+
+.profile-container-dark {
+  border: 10px solid #ff6900;
+}
+
+
+.profile{
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+  padding: 10px;
+  padding-left: 25px;
+  
+}
+
+.profile-lg {
+ filter: drop-shadow(.75em .75em 1em #03fd63);
+}
+
+.profile-dr {
+ filter: drop-shadow(.75em .75em 1em #ff6900);
+}
+
+
+
+
+
+@keyframes wipe-in-left {
+  from {
+    clip-path: inset(0 0 0 200%);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:wipe:left"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-20px);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+}
+
+
+@media screen and (min-width:768px) {
+ 
+  .banner-content {
+    align-items: flex-start;
+  }
+
+ .profile-container-sm{
+  display: none;
+ }
+
+ .profile-container-lg{
+  display: block;
+  border-radius: 50%;
+  animation: wipe-in-left 2.5s,float 3s ease-in-out infinite;
+  padding: 28px ;
+  padding-left: 33px;
+ }
+
+
+  .banner-container{
+    flex-direction: row;
+  }
+  .banner-container h3 {
+    font-size: 20px;
+  }
+  
+  .name{
+    font-size: 28px;
+  } 
+
+  .banner-content p {
+    text-align: start;
+  }
+
+  .profile {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media screen and (min-width:992px) {
+ .name{
+  font-size: 30px;
+ } 
+
+ .profile {
+  height: 250px;
+  width: 250px;
+ }
+}
+
+@media screen and (min-width:1200px) {
+  
+  .banner-container h3 {
+    font-size: 30px;
+  }
+
+
+  .name{
+    font-size: 45px;
+  }
+
+  .job-name{
+    font-size: 30px;
+  }
+
+  .banner-container p {
+    font-size: 18px;
+  }
+
+  .profile {
+    height: 280px;
+    width: 280px;
+    
+    
+  }
+}

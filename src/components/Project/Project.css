@@ -1,0 +1,112 @@
+.project-main-container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   min-height: 125vh;
+   gap: 5vw;
+   margin-top: 150px;
+   margin-bottom: 30px;
+   padding: 10px;
+}
+
+.project-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pro-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.single-project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: url("https://res.cloudinary.com/dpykift6z/image/upload/v1742278133/ogg7sy7hj6iufvcxwmcd.jpg") no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 180px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden; /* Prevent overflow */
+    cursor: pointer;
+    font-family: "inter";
+
+}
+
+.single-project-container h1 {
+    color: aliceblue;
+}    
+
+.single-project-container p {
+    color: aliceblue;
+    font-family: "inter";
+    font-weight: 600;
+}
+
+/* Initially hide .project-selection */
+.project-selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(109, 112, 112, 0.8); /* Slight transparency */
+    position: absolute;
+    top: 100%; /* Start outside */
+    left: 0;
+    transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    cursor: pointer;
+    font-family: "inter";
+}
+
+.project-selection a {
+    color: #05f525;
+}
+
+/* On hover, bring it up */
+.single-project-container:hover .project-selection {
+    top: 0;
+    opacity: 1;
+}
+
+.project-heading {
+    color: antiquewhite;
+}
+
+
+@media screen and (min-width:768px) {
+    .project-main-container{
+      min-height: 45vh;
+      gap: 2vw;
+    }
+}
+
+
+@media screen and (min-width:992px) {
+    .project-main-container{
+      min-height: 40vw;
+    }
+}
+
+
+
+@media screen and (min-width:1200px) {
+    .project-main-container{
+      min-height: 40vw;
+      margin: 30px;
+    }
+}
+
+
+
