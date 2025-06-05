@@ -6,7 +6,7 @@ import { MdNightsStay } from "react-icons/md";
 import { IoSunnySharp } from "react-icons/io5";
 
 import { useContext } from "react";
-import { ThemeContext } from "../../../context/ThemeContext";
+import { ThemeContext } from "../../../context/themeContext";
 import "./NavbarFixed.css";
 import { menuList } from "../../../assets/assets";
 

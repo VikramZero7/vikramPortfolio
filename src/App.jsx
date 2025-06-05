@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
-import { ThemeContext } from "./context/ThemeContext";
+import { ThemeContext } from "./context/themeContext";
 import Footer from "./components/Footer/Footer";
 
 const App = () => {

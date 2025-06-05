@@ -5,7 +5,7 @@ import { MdNightsStay } from "react-icons/md";
 import { FaBars } from "react-icons/fa6";
 import { IoSunnySharp } from "react-icons/io5";
 import "./NavbarDefault.css";
-import { ThemeContext } from "../../../context/ThemeContext";
+import { ThemeContext } from "../../../context/themeContext";
 import { useContext, useState } from "react";
 import { menuList, useIntersectionObserver } from "../../../assets/assets";
 import { useRef } from "react";

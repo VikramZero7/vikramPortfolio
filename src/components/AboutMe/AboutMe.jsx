@@ -3,7 +3,7 @@ import AOS from "aos";
 import { motion } from "framer-motion";
 
 import "./AboutMe.css";
-import { ThemeContext } from "../../context/ThemeContext";
+import { ThemeContext } from "../../context/themeContext";
 import { useContext, useEffect } from "react";
 import { useRef } from "react";
 import { useIntersectionObserver } from "../../assets/assets";

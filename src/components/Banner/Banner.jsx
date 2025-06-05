@@ -8,7 +8,7 @@ import React, { useContext, useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { ThemeContext } from "../../context/ThemeContext";
+import { ThemeContext } from "../../context/themeContext";
 
 import "./Banner.css";
 

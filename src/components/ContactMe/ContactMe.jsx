@@ -10,7 +10,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 import "./ContactMe.css";
 
-import { ThemeContext } from "../../context/ThemeContext";
+import { ThemeContext } from "../../context/themeContext";
 import { useContext } from "react";
 import { useIntersectionObserver } from "../../assets/assets";
 
